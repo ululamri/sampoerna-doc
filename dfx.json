@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "sampoerna-doc-backend": {
+      "main": "src/sampoerna-doc-backend/main.mo",
+      "type": "motoko"
+    },
+    "sampoerna-doc-frontend": {
+      "dependencies": [
+        "sampoerna-doc-backend"
+      ],
+      "source": [
+        "src/sampoerna-doc-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "sampoerna-doc-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
